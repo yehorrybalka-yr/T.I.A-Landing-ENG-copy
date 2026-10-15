@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.I.A Private Advisory | Strategic Investments in Phuket</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.6/css/intlTelInput.css">
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '713804315123898');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=713804315123898&ev=PageView&noscript=1"
+    /></noscript>
+
+    <style>
+        :root {
+            --heritage-green: #0B352D;
+            --heritage-green-light: #124A3F;
+            --warm-brass: #BCA37F;
+            --warm-brass-hover: #A8906D;
+            --deep-graphite: #1A1A1A;
+            --text-secondary: #5A5A5A;
+            --paper-white: #F9F9F7;
+            --white: #FFFFFF;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Manrope', sans-serif;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-sm: 0 4px 20px rgba(11, 53, 45, 0.04);
+            --shadow-md: 0 16px 40px rgba(11, 53, 45, 0.08);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--paper-white);
+            color: var(--deep-graphite);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 { 
+            font-family: var(--font-heading); 
+            color: var(--heritage-green); 
+            font-weight: 500;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .btn-primary { background-color: var(--heritage-green); color: var(--white); }
+        .btn-primary:hover { background-color: #082620; transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+        .btn-outline { background-color: transparent; color: var(--heritage-green); border-color: var(--heritage-green); }
+        .btn-outline:hover { background-color: var(--heritage-green); color: var(--white); transform: translateY(-2px); }
+
+        .cta-container { text-align: center; margin-top: 40px; }
+
+        /* --- Header --- */
+        header { 
+            padding: 24px 40px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: absolute; 
+            top: 0; left: 0; right: 0; 
+            z-index: 10; 
+        }
+        .logo { height: 48px; object-fit: contain; }
+        .header-tagline { color: var(--heritage-green); font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;}
+
+        /* --- Hero Section --- */
+        .hero { 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(249, 249, 247, 0.85), rgba(249, 249, 247, 0.95)), url('back1.png') no-repeat center center/cover;
+            padding: 120px 24px 60px;
+        }
+        .hero h1 { font-size: clamp(36px, 5vw, 64px); line-height: 1.1; margin-bottom: 24px; max-width: 1100px; }
+        .hero p { font-size: clamp(16px, 1.5vw, 20px); color: var(--text-secondary); max-width: 650px; margin-bottom: 40px; }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+        /* --- General Layout --- */
+        section { padding: 100px 24px; max-width: 1280px; margin: 0 auto; }
+        .section-header { margin-bottom: 60px; text-align: center; }
+        .section-header h2 { font-size: clamp(32px, 4vw, 48px); margin-bottom: 16px; }
+        .section-header p { color: var(--text-secondary); font-size: 18px; max-width: 600px; margin: 0 auto; }
+
+        /* --- Split Block (A to B) --- */
+        .split-card { display: flex; background: var(--white); border-radius: 20px; box-shadow: var(--shadow-sm); overflow: hidden; position: relative; }
+        .split-half { padding: 60px 50px; flex: 1; }
+        .split-a { background: #FCFCFC; border-right: 1px solid #F0F0F0; }
+        .split-b { background: var(--heritage-green); color: var(--white); }
+        .split-b h3 { color: var(--warm-brass); }
+        .split-badge { display: inline-block; padding: 6px 12px; border-radius: 4px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; }
+        .split-a .split-badge { background: #EEEEEE; color: var(--text-secondary); }
+        .split-b .split-badge { background: rgba(188, 163, 127, 0.2); color: var(--warm-brass); }
+        .split-card h3 { font-size: 32px; margin-bottom: 24px; }
+        .split-list { list-style: none; }
+        .split-list li { position: relative; padding-left: 32px; margin-bottom: 20px; font-size: 16px; }
+        .split-a .split-list li { color: var(--text-secondary); }
+        .split-a .split-list li::before { content: '✕'; position: absolute; left: 0; color: #D32F2F; font-size: 14px; top: 2px; }
+        .split-b .split-list li { color: rgba(255,255,255,0.9); }
+        .split-b .split-list li::before { content: '✓'; position: absolute; left: 0; color: var(--warm-brass); font-weight: bold; font-size: 16px; top: 0; }
+
+        /* --- Us vs Them Slider --- */
+        .slider-wrapper { margin: 0 -24px; padding: 20px 24px 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+        .slider-wrapper::-webkit-scrollbar { display: none; }
+        .slider-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .slide-card { background: var(--white); border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; overflow: hidden; border: 1px solid #F0F0F0; }
+        .slide-header { padding: 24px; font-family: var(--font-heading); font-size: 22px; text-align: center; border-bottom: 1px solid #F0F0F0; background: #FAFAFA; }
+        .slide-content { display: flex; flex-direction: column; flex: 1; }
+        .slide-half { padding: 30px; flex: 1; font-size: 15px;}
+        .slide-them { background: var(--white); color: var(--text-secondary); border-bottom: 1px dashed #EBEBEB; }
+        .slide-them::before { content: 'TYPICAL AGENCIES'; display: block; font-size: 10px; font-weight: 700; color: #999; margin-bottom: 12px; letter-spacing: 1px;}
+        .slide-us { background: var(--heritage-green-light); color: var(--white); }
+        .slide-us::before { content: 'T.I.A ADVISORY'; display: block; font-size: 10px; font-weight: 700; color: var(--warm-brass); margin-bottom: 12px; letter-spacing: 1px;}
+
+        /* --- Cases Block --- */
+        .cases-wrapper {
+            background: linear-gradient(rgba(11, 53, 45, 0.92), rgba(11, 53, 45, 0.92)), url('back2.png') no-repeat center center/cover;
+            padding: 100px 24px;
+            color: var(--white);
+            border-radius: 24px;
+            margin: 0 24px 100px;
+        }
+        .cases-wrapper .section-header h2 { color: var(--white); }
+        .cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .case-card { 
+            background: rgba(255, 255, 255, 0.05); 
+            border: 1px solid rgba(188, 163, 127, 0.3); 
+            border-radius: 16px; 
+            padding: 40px; 
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+        .case-card:hover { transform: translateY(-5px); border-color: var(--warm-brass); background: rgba(255, 255, 255, 0.08); }
+        .case-header h4 { color: var(--white); font-size: 24px; margin-bottom: 24px; font-family: var(--font-body); font-weight: 600;}
+        .case-badge { display: inline-block; background: var(--warm-brass); color: var(--heritage-green); padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 16px; }
+        .stat-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 15px; }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-row span { color: rgba(255,255,255,0.7); }
+        .case-profit { margin-top: 30px; background: var(--heritage-green); padding: 20px; border-radius: 8px; text-align: center; border: 1px dashed rgba(188, 163, 127, 0.5);}
+        .profit-label { font-size: 13px; color: var(--warm-brass); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .profit-value { font-size: 36px; font-family: var(--font-heading); font-weight: 600; color: var(--white); line-height: 1;}
+
+        /* --- Math Block --- */
+        .math-wrapper { background: var(--white); border-radius: 24px; padding: 80px 40px 60px; box-shadow: var(--shadow-md); margin-bottom: 100px; }
+        .math-timeline { max-width: 800px; margin: 0 auto; }
+        .math-row { display: grid; grid-template-columns: 120px 1fr auto; gap: 20px; padding: 24px 0; border-bottom: 1px solid #EBEBEB; align-items: center; }
+        .math-row:last-child { border-bottom: none; }
+        .math-percent { font-family: var(--font-heading); font-size: 24px; color: var(--heritage-green); font-weight: 600; }
+        .math-desc { font-size: 16px; color: var(--text-secondary); }
+        .math-amount { font-weight: 600; font-size: 18px; color: var(--deep-graphite); text-align: right; background: var(--paper-white); padding: 8px 16px; border-radius: 8px;}
+
+        /* --- Steps Grid --- */
+        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1280px; margin: 0 auto; }
+        .step-card { background: var(--white); color: var(--deep-graphite); padding: 40px 32px; border-radius: 16px; box-shadow: var(--shadow-sm); position: relative; overflow: hidden; transition: var(--transition); border: 1px solid #F0F0F0;}
+        .step-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: var(--warm-brass); }
+        .step-number { font-family: var(--font-heading); font-size: 80px; color: var(--paper-white); -webkit-text-stroke: 1px var(--warm-brass); opacity: 0.5; line-height: 1; position: absolute; top: 10px; right: 20px; font-weight: 600; }
+        .step-card h4 { font-size: 22px; margin-bottom: 16px; color: var(--heritage-green); position: relative; z-index: 1;}
+        .step-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; position: relative; z-index: 1;}
+
+        /* --- Contact Form Section --- */
+        .contact-section { background: var(--heritage-green); color: var(--white); border-radius: 24px; padding: 80px 40px; margin: 60px auto; max-width: 800px; box-shadow: var(--shadow-md); }
+        .contact-section h2 { text-align: center; margin-bottom: 40px; color: var(--white); }
+        .contact-form { display: flex; flex-direction: column; gap: 20px; }
+        .input-group { width: 100%; }
+        
+        .input-field { width: 100%; padding: 18px 24px; border: 1px solid rgba(188, 163, 127, 0.3); border-radius: 8px; font-family: var(--font-body); font-size: 16px; transition: var(--transition); background-color: rgba(255, 255, 255, 0.05); color: var(--white); outline: none; }
+        .input-field::placeholder { color: rgba(255, 255, 255, 0.5); }
+        .input-field:focus { border-color: var(--warm-brass); background-color: rgba(255, 255, 255, 0.1); }
+        textarea.input-field { resize: vertical; min-height: 120px; }
+        
+        .iti { width: 100%; }
+        .iti__country-list { background-color: var(--deep-graphite); color: var(--white); border: 1px solid var(--warm-brass); }
+        .iti__country-name { color: var(--white); }
+        .iti__dial-code { color: var(--warm-brass); }
+
+        .btn-submit { background-color: var(--warm-brass); color: var(--heritage-green); width: 100%; margin-top: 10px; }
+        .btn-submit:hover { background-color: var(--warm-brass-hover); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(188, 163, 127, 0.2); }
+        .btn-submit:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+        /* --- Footer --- */
+        footer { background: var(--deep-graphite); color: rgba(255,255,255,0.5); padding: 60px 24px; text-align: center; font-size: 13px; }
+        .footer-logo { height: 40px; filter: brightness(0) invert(1); margin-bottom: 24px; opacity: 0.7;}
+
+        /* --- Responsive Design --- */
+        @media (max-width: 1024px) {
+            .split-card { flex-direction: column; }
+            .split-a { border-right: none; border-bottom: 1px solid #F0F0F0; }
+        }
+        @media (max-width: 768px) {
+            header { padding: 20px; }
+            .header-tagline { display: none; }
+            .hero h1 { font-size: 36px; }
+            .slider-track { display: flex; min-width: max-content; }
+            .slide-card { width: 85vw; scroll-snap-align: center; }
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .hero-buttons .btn { width: 100%; }
+            .cases-wrapper { margin: 0 0 80px; border-radius: 0; padding: 80px 20px;}
+            .math-row { grid-template-columns: 1fr; gap: 8px; text-align: center; padding: 30px 0;}
+            .math-amount { text-align: center; margin-top: 10px;}
+            .contact-section { padding: 50px 24px; border-radius: 0;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.PNG" alt="T.I.A Logo" class="logo">
+    <div class="header-tagline">Private Advisory & Law</div>
+</header>
+
+<section class="hero">
+    <h1>Preserve and Multiply Capital in Phuket Real Estate Amid Global Uncertainty</h1>
+    <p>Strategic real estate investments in Phuket with target returns up to +33%. Comprehensive due diligence and a secure transaction infrastructure.</p>
+    <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get the Strategy</a>
+        <a href="#steps" class="btn btn-outline">Deal Architecture</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-header">
+        <h2>A Paradigm Shift</h2>
+        <p>Transforming a chaotic market into a predictable financial instrument.</p>
+    </div>
+    
+    <div class="split-card">
+        <div class="split-half split-a">
+            <span class="split-badge">Standard Approach</span>
+            <h3>The Illusion of Guarantees</h3>
+            <ul class="split-list">
+                <li>Fear of market collapse due to a lack of analytics.</li>
+                <li>Catalogs with 500+ properties but zero investment logic.</li>
+                <li>Contracts drafted by developers to protect THEIR interests.</li>
+                <li>No clear strategy on how to realize profits (rental/resale).</li>
+            </ul>
+        </div>
+        
+        <div class="split-half split-b">
+            <span class="split-badge">T.I.A Advisory</span>
+            <h3>The Protected Asset</h3>
+            <ul class="split-list">
+                <li>Capital is "parked" in highly liquid projects (e.g., Gardens of Eden).</li>
+                <li>Precise financial modeling for ROI and yield projections.</li>
+                <li>Our lawyers renegotiate terms to secure your exit strategy.</li>
+                <li>End-to-end management: from tax optimization to asset resale.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="cases-wrapper">
+    <div class="section-header">
+        <h2>Executed Strategies</h2>
+        <p style="color: rgba(255,255,255,0.7);">Actual exit figures from our clients' portfolios</p>
+    </div>
+    <div class="cases-grid">
+        <div class="case-card">
+            <span class="case-badge">Successful Exit</span>
+            <div class="case-header"><h4>Bang Tao Residence</h4></div>
+            <div class="stat-row"><span>Entry (Off-plan):</span> <strong>$215,000</strong></div>
+            <div class="stat-row"><span>Exit (Completed):</span> <strong>$286,000</strong></div>
+            <div class="stat-row"><span>Investment Term:</span> <strong>14 months</strong></div>
+            <div class="case-profit">
+                <div class="profit-label">Net Profit (ROI)</div>
+                <div class="profit-value">+ 33.0%</div>
+            </div>
+        </div>
+        <div class="case-card">
+            <span class="case-badge">Passive Income</span>
+            <div class="case-header"><h4>Nai Harn Villa</h4></div>
+            <div class="stat-row"><span>Asset Value:</span> <strong>$450,000</strong></div>
+            <div class="stat-row"><span>Annual Rental Yield:</span> <strong>$54,000</strong></div>
+            <div class="stat-row"><span>Management:</span> <strong>T.I.A Infrastructure</strong></div>
+            <div class="case-profit">
+                <div class="profit-label">Yield in USD</div>
+                <div class="profit-value">12.0% p.a.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section style="padding-top: 0;">
+    <div class="section-header">
+        <h2>Our Intellectual Value</h2>
+    </div>
+    
+    <div class="slider-wrapper">
+        <div class="slider-track">
+            <div class="slide-card">
+                <div class="slide-header">Property Selection</div>
+                <div class="slide-content">
+                    <div class="slide-half slide-them">Send a catalog of renders and ask you to choose based on "taste."</div>
+                    <div class="slide-half slide-us">We only propose residences that have passed our strict internal audit.</div>
+                </div>
+            </div>
+            <div class="slide-card">
+                <div class="slide-header">Argumentation</div>
+                <div class="slide-content">
+                    <div class="slide-half slide-them">Sell based on FOMO: "Buy urgently, this is the last available unit."</div>
+                    <div class="slide-half slide-us">We rely on numbers. We prepare detailed expense and net profit models.</div>
+                </div>
+            </div>
+            <div class="slide-card">
+                <div class="slide-header">Asset Lifecycle</div>
+                <div class="slide-content">
+                    <div class="slide-half slide-them">The relationship ends as soon as funds are transferred to the developer.</div>
+                    <div class="slide-half slide-us">End-to-end support: construction oversight, handover, and resale strategy.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cta-container">
+        <a href="#contact" class="btn btn-primary">Get Project Breakdown</a>
+    </div>
+</section>
+
+<section style="padding-top: 0;">
+    <div class="math-wrapper">
+        <div class="section-header">
+            <h2>Transparent Mathematics</h2>
+            <p>Example payment schedule based on Park Residences (Gardens of Eden).<br>Total unit price: <strong>15,189,000 THB</strong> (~$450,000)</p>
+        </div>
+        
+        <div class="math-timeline">
+            <div class="math-row">
+                <div class="math-percent">Reserve</div>
+                <div class="math-desc">Unit reservation and price fixation</div>
+                <div class="math-amount">200,000 THB</div>
+            </div>
+            <div class="math-row">
+                <div class="math-percent">35%</div>
+                <div class="math-desc">Contract signing (within 30 days)</div>
+                <div class="math-amount">5,116,150 THB</div>
+            </div>
+            <div class="math-row">
+                <div class="math-percent">10%</div>
+                <div class="math-desc">Completion of foundation</div>
+                <div class="math-amount">1,518,900 THB</div>
+            </div>
+            <div class="math-row">
+                <div class="math-percent">10%</div>
+                <div class="math-desc">Completion of building structure</div>
+                <div class="math-amount">1,518,900 THB</div>
+            </div>
+            <div class="math-row">
+                <div class="math-percent">5%</div>
+                <div class="math-desc">Interior finishes and MEP systems</div>
+                <div class="math-amount">759,450 THB</div>
+            </div>
+            <div class="math-row" style="border-bottom: none;">
+                <div class="math-percent">40%</div>
+                <div class="math-desc">Key handover and ownership registration</div>
+                <div class="math-amount">6,075,600 THB</div>
+            </div>
+        </div>
+        
+        <div class="cta-container">
+            <a href="#contact" class="btn btn-outline">Calculate Model for My Budget</a>
+        </div>
+    </div>
+</section>
+
+<section id="steps" style="padding-top: 0;">
+    <div class="section-header">
+        <h2>Deal Architecture</h2>
+        <p>A turnkey action plan for building passive income. We handle the complexities.</p>
+    </div>
+    
+    <div class="steps-grid">
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <h4>Strategic <br>Session</h4>
+            <p>We connect, analyze your request, evaluate market opportunities, and determine the initial trajectory for your capital.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">02</div>
+            <h4>Goal Audit</h4>
+            <p>Defining the strategy: aggressive capital growth through off-plan resale or conservative wealth preservation via rental yields.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <h4>Fin. Model</h4>
+            <p>Digitizing the project: calculating depreciation, hidden fees, taxes, and projecting actual net profit rather than marketing hype.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">04</div>
+            <h4>Protection</h4>
+            <p>Legal adjustment of developer contracts. Establishing secure and compliant pathways for fund transfers.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">05</div>
+            <h4>Execution</h4>
+            <p>Market entry. We secure the best units prior to official public sales (e.g., Phase 2 of Park Residences).</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">06</div>
+            <h4>Management</h4>
+            <p>You receive quarterly reports. Our infrastructure handles leasing, property maintenance, and the final exit strategy.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-section">
+        <h2>Find out how to intelligently invest in the Phuket market</h2>
+        
+        <form class="contact-form" id="leadForm">
+            <div class="input-group">
+                <input type="text" name="name" class="input-field" placeholder="Your Name*" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="lead-phone" class="input-field" placeholder="Phone Number*" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" class="input-field" placeholder="Email Address*" required>
+            </div>
+            <div class="input-group">
+                <textarea name="comment" class="input-field" placeholder="Your question or comment (optional)"></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-submit">Book a Strategic Session</button>
+            <div id="formMessage" style="display:none; text-align:center; margin-top:10px; font-weight:bold;"></div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <img src="logo.PNG" alt="T.I.A Logo" class="footer-logo">
+    <p>© 2026 T.I.A Investment & Law. Phuket, Thailand.<br>Private Advisory | Legal & Investment Synergy</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.6/js/intlTelInput.min.js"></script>
+<script>
+    // Initialize phone input
+    const phoneInput = document.querySelector("#lead-phone");
+    const iti = window.intlTelInput(phoneInput, {
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.6/js/utils.js",
+        initialCountry: "auto",
+        geoIpLookup: function(success, failure) {
+            fetch("https://ipapi.co/json").then(function(res) { return res.json(); }).then(function(data) {
+                success(data.country_code);
+            }).catch(function() { success("th"); });
+        },
+        separateDialCode: true,
+    });
+
+    // Handle form submission
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const btn = document.getElementById('submitBtn');
+        const msgBlock = document.getElementById('formMessage');
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcJBHeLtAQ5ow_cnxhnENfuM69PXdNgLlgU8qAl4c8VkCmVyvCVpPQj2fEmSDAQN9H/exec';
+        
+        // Change button state
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+        msgBlock.style.display = 'none';
+
+        // Gather data into a JSON object, as expected by the Google Sheet
+        const leadData = {
+            name: this.name.value,
+            phone: iti.getNumber(),
+            email: this.email.value,
+            comment: this.comment.value, // Pass comment
+            q1: "", // Tag to differentiate from the quiz
+            q2: "",
+            budget: "",
+            utm: { utm_source: "", utm_medium: "", utm_campaign: "", utm_content: "", utm_term: "" }
+        };
+
+        // Send to Google Sheets (same method as the quiz)
+        fetch(scriptURL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain;charset=utf-8' 
+            },
+            body: JSON.stringify(leadData)
+        })
+        .then(response => {
+            // Successful submission: trigger Pixel
+            fbq('track', 'Lead');
+            
+            // UI feedback
+            msgBlock.style.color = 'var(--warm-brass)';
+            msgBlock.textContent = 'Your request has been successfully sent! We will contact you shortly.';
+            msgBlock.style.display = 'block';
+            this.reset();
+        })
+        .catch(error => {
+            // Ignore CORS errors as the payload still reaches the destination
+            console.log('Catch triggered, but lead was sent:', error);
+            fbq('track', 'Lead');
+            msgBlock.style.color = 'var(--warm-brass)';
+            msgBlock.textContent = 'Your request has been successfully sent! We will contact you shortly.';
+            msgBlock.style.display = 'block';
+            this.reset();
+        })
+        .finally(() => {
+            btn.textContent = 'Book a Strategic Session';
+            btn.disabled = false;
+        });
+    });
+</script>
+
+</body>
+</html>
